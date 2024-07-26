@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iSHALLPASS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+         <!--logo  -->
+         <header>
+            <div class="logo-score"></div>
+            <a href="">iSHALLPASS</a>
+         </header>
+
+         
+        <div class="buttons">
+            <button id="submit" onclick="reload()">Reload</button>
+            <button id="clear" onclick="clearing()">Clear</button>
+            <button id="ex" onclick="example()">Example</button>
+        </div>
+
+        <div class="main-grade">
+            <img src="files/bar-grade.png" alt="">           
+            <div class="current-grade" id="current-weights">
+                <p id="current-grade-score">CR</p>
+            </div>
+            <div class="current-logo-score" id="logo-score-pointer">
+                <div class="logo-score"></div>
+                <p class="logo-score-number" id="logo-score-number">67.3%</p>
+            </div>
+        </div>
+
+        <div class="title">
+            <input id="classname" value="Insert Class Name">
+        </div>
+
+
+        <form id="frm1" onchange="reload()">
+            <table>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Weight</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+
+            <input class="assignment" value="A1">
+            <input type="text" class="weight" value="20">
+            <input type="number" class="total-scored" value="74">
+            <span>/</span>
+            <input type="number" class="total-total" value="100">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage">+17.2%</span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+
+            <input class="assignment" value="">
+            <input type="text" class="weight" value="">
+            <input type="number" class="total-scored" value="">
+            <span>/</span>
+            <input type="number" class="total-total" value="">
+            <span class="percentage">
+                <span class="before-percentage"></span>
+                <span class="the-percentage"></span>
+            </span><br>
+        </form>
+
+
+
+        <!-- info -->
+        <footer>
+            <p><a href="https://linktr.ee/tranthanhhthao">thảo</a> made this. 2024.</p>
+        </footer>
+
+    </main>
+	<script src="app.js"></script>
+  </body>
+</html>
