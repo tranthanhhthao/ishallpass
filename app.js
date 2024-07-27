@@ -1,6 +1,7 @@
 const inputs = document.getElementById('frm1');
 const className = document.getElementById('classname');
 
+const asm = document.getElementsByClassName('assignment');
 const weights = document.getElementsByClassName('weight');
 const percentages = document.getElementsByClassName('percentage');
 const beforePercentages = document.getElementsByClassName('before-percentage');
@@ -44,7 +45,7 @@ function reload () {
 
                     // change weight bar length
                     totalWeightNum += weightNumValue
-                    currentWeight.style.width = totalWeightNum*558/100 + 'px'
+                    currentWeight.style.width = totalWeightNum*465/100 + 'px'
                 }
                 
                 let curAPoint = Aperc*weightNumValue
@@ -53,7 +54,7 @@ function reload () {
 
                 if (!(isNaN(curAPoint))) {
                     curPoint += curAPoint;
-                    console.log('curPoint', curPoint)
+                    // console.log('curPoint', curPoint)
                 }
 
         } else {
@@ -122,13 +123,14 @@ function reload () {
     logoScoreNumber.innerHTML = curPoint.toFixed(1);
 
     // run the pointer
-    logoScorePointer.style.left = 20 + 5.58*curPoint + 'px'
+    logoScorePointer.style.left = 17 + 4.65*curPoint + 'px'
     
 }
 
 reload()
 
 function clearing() {
+    className.value = '';
     
     for (let i = 0; i < inputs.length; i++) {
         inputs.elements[i].value = ''
@@ -145,6 +147,78 @@ function clearing() {
     reload()
 }
 
-// percentages[3].style.backgroundColor = '#d83621';
+let exampleClicks = 0;
+
+function example() {
+    exampleClicks++;
+
+    if (exampleClicks > 2) {
+        exampleClicks = 1;
+    }
+
+    if (exampleClicks === 1) {
+        console.log('click is 1')
+        className.value = 'Global Media Industries';
+
+        asm[0].value = 'Quiz 1';
+        weights[0].value = 10;
+        totalScores[0].value = 70;
+        totalTotals[0].value = 100;
+    
+        asm[1].value = 'Reflection';
+        weights[1].value = 30;
+        totalScores[1].value = 50;
+        totalTotals[1].value = 100;
+    
+        asm[2].value = 'Quiz 2';
+        weights[2].value = 10;
+        totalScores[2].value = 80;
+        totalTotals[2].value = 100;
+
+        asm[3].value = '';
+        weights[3].value = '';
+        totalScores[3].value = '';
+        totalTotals[3].value = '';
+    
+        asm[4].value = '';
+        weights[4].value = '';
+        totalScores[4].value = '';
+        totalTotals[4].value = '';
+    
+    } else if (exampleClicks === 2) {
+        className.value = 'Global Media Industries';
+
+        asm[0].value = 'Quiz 1';
+        weights[0].value = 10;
+        totalScores[0].value = 70;
+        totalTotals[0].value = 100;
+    
+        asm[1].value = 'Reflection';
+        weights[1].value = 30;
+        totalScores[1].value = 50;
+        totalTotals[1].value = 100;
+    
+        asm[2].value = 'Quiz 2';
+        weights[2].value = 10;
+        totalScores[2].value = 80;
+        totalTotals[2].value = 100;
+    
+        asm[3].value = 'Cultural Adaptation';
+        weights[3].value = 40;
+        totalScores[3].value = 63;
+        totalTotals[3].value = 100;
+    
+        asm[4].value = 'Quiz 3';
+        weights[4].value = 10;
+        totalScores[4].value = 40;
+        totalTotals[4].value = 100;
+    } 
+
+    console.log('click', exampleClicks)
+
+    
+
+    reload()
+}
 
 

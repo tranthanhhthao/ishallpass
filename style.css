@@ -1,11 +1,13 @@
 body {
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 main {
     margin-left: 20%;
     font-family: 'Work Sans', sans-serif;
-    
+    width: fit-content;
+    overflow-x: hidden;
 }
 
 header {
@@ -13,6 +15,7 @@ header {
     height: 60px;
 
     /* background-color: beige; */
+    width: fit-content;
 }
 
 header a {
@@ -49,6 +52,7 @@ h1 {
     margin-left: 2px;
     top: 40px;
 
+    color: black;
     background-color: #ccc;
     border: 0 solid;
     padding: 3px 6px 3px 6px;
@@ -60,7 +64,7 @@ h1 {
     position: relative;
     border: 1px solid #b3b3b3;
 
-    width: 600px;
+    width: 500px;
     height: 200px;
 
     margin-top: 50px;
@@ -68,7 +72,7 @@ h1 {
 
 .main-grade img {
     position: absolute;
-    width: 600px;
+    width: 500px;
     bottom: 0;
 }
 
@@ -76,11 +80,11 @@ h1 {
     position: absolute;
 
     height: 40px;
-    width: 558px;
+    width: 465px;
 
     background-color: #faee3b;
 
-    left: 20px;
+    left: 17px;
     top: -20px;
 }
 
@@ -97,7 +101,7 @@ h1 {
 .current-logo-score {
     position: absolute;
 
-    left: calc(20px + 5.58*67.3px);
+    left: calc(17px + 4.65*67.3px);
     top: 100px;
     background-color: aqua;
 }
@@ -147,6 +151,7 @@ h1 {
 /*  */
 .title {
     margin-top: 30px;
+    width: fit-content;
 }
 
 .title p {
@@ -176,7 +181,7 @@ form {
     display: block;
 
     margin: 100px 0 0 0;
-    width: 620px;
+    width: 520px;
     /* background-color: beige; */
 }
 
@@ -315,8 +320,43 @@ input[type=number] {
 footer {
     margin-top: 100px;
     color: #ccc;
+    width: fit-content;
+
+    /* background-color: antiquewhite; */
 }
 
 footer a {
     color: #ccc;
 }
+
+@media only screen and (max-width: 790px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    main {
+        margin-left: 1%;
+    }
+
+    header {
+        margin-left: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    main {
+        margin-left: 0;
+    }
+
+    header {
+        margin-left: 50px;
+    }
+
+}
+
+
