@@ -41,8 +41,10 @@ h1 {
     position: absolute;
     display: block;
 
+    unicode-bidi: bidi-override;
+    direction: rtl;
     top: 39px;
-    right: 0;
+    right: 20px;
     
 }
 
@@ -361,6 +363,10 @@ footer a {
     color: #ccc;
 }
 
+footer p {
+    font-size: 13px;
+}
+
 @media only screen and (max-width: 790px) {
     body {
         overflow-x: hidden;
@@ -373,7 +379,12 @@ footer a {
     header {
         margin-left: 50px;
     }
-
+    
+    .system {
+        right: 0;
+        unicode-bidi: bidi-override;
+        direction: rtl;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -387,6 +398,12 @@ footer a {
 
     header {
         margin-left: 50px;
+    }
+
+    .system {
+        right: 0;
+        unicode-bidi: bidi-override;
+        direction: rtl;
     }
 
 }
