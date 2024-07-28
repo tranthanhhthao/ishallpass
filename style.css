@@ -12,7 +12,7 @@ main {
 
 header {
     margin-top: 30px;
-    height: 60px;
+    height: 100px;
 
     /* background-color: beige; */
     width: fit-content;
@@ -25,12 +25,44 @@ header a {
     font-size: 20px;
 }
 
+.logo {
+    margin-left: 30px ;
+}
+
 h1 {
     position: relative;
     display: block;
 
     left: -40px;
     color: #ccc;
+}
+/* system */
+.system {
+    position: absolute;
+    display: block;
+
+    top: 39px;
+    right: 0;
+    
+}
+
+.custom-select {
+    position: relative;
+    font-family: Work Sans;
+}
+
+select {
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    font-size: 13px;
+}
+
+/* tag line */
+.tagline {
+    color: #b3b3b3;
+
+    margin-top: 67px;
+    right: -30px;
 }
 
 /* buttons */
